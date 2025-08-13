@@ -24,6 +24,7 @@ await fastify.register(import('@fastify/rate-limit'), {
 await fastify.register(import('./routes/auth.js'));
 await fastify.register(import('./routes/user.js'));
 await fastify.register(import('./routes/admin.js'));
+await fastify.register(import('./routes/media.js'));
 
 
 const PORT = Number(process.env.PORT) || 8080;
